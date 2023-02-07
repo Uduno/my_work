@@ -67,22 +67,23 @@ def get_image(image_path):
     return pixel_values
 
 
-image = get_image("input.jpeg")
+image = get_image("Input.jpeg")
 
 print(image[0][0])
 print(image.shape)
-print(len(image), len(image[0]), len(image[0][0]))
 
+img_pix = image
 
+print(img_pix,"fin 1er")
 def enc_img(img, key):
     for i in range(len(image)):
         for j in range(len(image[0])):
             for o in range(len(image[0][0])):
                 img[i][j][o] = enc_bytes(img[i][j][o], key)
 
-enc_img(image,sbox)
-
-img = Image.open("input.jpeg")
+enc_img(img_pix,sbox)
+print(img_pix,"fin 2er")
+img = Image.open("Input.jpeg","r")
 img.show()
 def change_pixel(img,pixel_list):
 	for i in range(len(pixel_list)):
@@ -90,15 +91,26 @@ def change_pixel(img,pixel_list):
 			px = (pixel_list[i][j][0],pixel_list[i][j][1],pixel_list[i][j][2])
 			img.putpixel((i,j),px)
 
-change_pixel(img,image)
-
 x = img.size[0]
 y = img.size[1]
+
 # # #Afficher l'image
 #img.show()
 
 img_enc = Image.new('RGB', (x, y), color = 'black')
-change_pixel(img_enc,image)
-#change_pixel(img,image)
-img_enc.save('output_enc.png')
+change_pixel(img_enc,img_pix)
+img_enc.save('output_enc.jpeg')
 img_enc.show()
+
+def dec_img(img, key):
+    for i in range(len(image)):
+        for j in range(len(image[0])):
+            for o in range(len(image[0][0])):
+                img[i][j][o] = dec_bytes(img[i][j][o], key)
+
+dec_img(img_pix,sbox)
+img_dec = Image.new('RGB', (x, y), color = 'black')
+change_pixel(img_dec,img_pix)
+img_dec.save('output_dec.jpeg')
+img_dec.show()
+print(img_pix,"fin 3er")
