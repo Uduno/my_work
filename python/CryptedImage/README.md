@@ -1,18 +1,18 @@
-#Encodage et Décodage d'un image(Raté)  
+# Encodage et Décodage d'un image(Raté)  
     
   Le but ici étant de prendre une image et de modifier la couleur des pixels de manière
   à la rendre inidentifiable. Le processus inverse sera appliqué pour rendre l'image
   de nouveau identifiable.
 
-  ##Librairie utilisée  
+  ## Librairie utilisée  
   **Numpy**:  
   `  import numpy as np  `  
-  utile pour gérer des listes.
+  utile pour gérer des listes.  
   **Pillow**:  
   `  from PIL import Image  `
   utile pour récupérer les données, les pixels, les dimensions des images et les afficher.  
      
-  ##Résultats:  
+  ## Résultats:  
       
   Comme on peut le voir au niveau des 3 fichiers jpeg, aucun n'est semblable à un autre.
   Le `Input.jpeg` ètant l'image originel, une fois encodée en sortie nous avons le `output_enc.jpeg`.
