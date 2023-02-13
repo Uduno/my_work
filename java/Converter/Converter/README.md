@@ -1,6 +1,6 @@
 # Convertisseur d'unité de mesure  
   L'objectif ici était de crée une petite application qui permet de convertir des unités de mesure. 
-  Un interface est assez simpliste permet de choisir quelle unité convenvertir. 
+  Une interface est assez simpliste permet de choisir quelle unité convenvertir. 
     
   ##  Les unités de mesure
   Les unités de mesures choisient sont celle de **Temps**, de **Température**, de **Vitesse** et de **Volume**.  
