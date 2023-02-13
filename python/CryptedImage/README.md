@@ -1,4 +1,4 @@
-# Encodage et Décodage d'un image(Raté)  
+# Encodage et Décodage d'une image(Raté)  
     
   Le but ici étant de prendre une image et de modifier la couleur des pixels de manière
   à la rendre inidentifiable. Le processus inverse sera appliqué pour rendre l'image
@@ -9,8 +9,8 @@
   `  import numpy as np  `  
   utile pour gérer des listes.  
   **Pillow**:  
-  `  from PIL import Image  `
-  utile pour récupérer les données, les pixels, les dimensions des images et les afficher.  
+  `  from PIL import Image  `  
+    utile pour récupérer les données, les pixels, les dimensions des images et les afficher.  
      
   ## Résultats:  
       
