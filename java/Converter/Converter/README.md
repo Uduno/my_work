@@ -6,13 +6,13 @@
   Les unités de mesures choisient sont celle de **Temps**, de **Température**, de **Vitesse** et de **Volume**.  
 
   1. **Temps**:  
-    * Année
-    * Semaine
-    * Jour
-    * Heure
-    * Minute
-    * Seconde
-    * Milliseconde  
+      * Année
+      * Semaine
+      * Jour
+      * Heure
+      * Minute
+      * Seconde
+      * Milliseconde  
   2. **Température**:  
     * Celcius
     * Fahrenheit
